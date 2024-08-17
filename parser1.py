@@ -29,7 +29,7 @@ def create_tab_delimited_file(filename, num_records=10):
             file.write(line + '\n')
 
 # Create a tab-delimited data file named 'tab_delimited_data.txt'
-create_tab_delimited_file('tab_delimited_data.txt', num_records=10)
+create_tab_delimited_file('./app/tab_delimited_data.txt', num_records=10)
 
 # Function to parse the fixed-width file and convert to CSV
 def fixed_width_to_csv(fixed_width_file, csv_file):
@@ -64,4 +64,4 @@ def fixed_width_to_csv(fixed_width_file, csv_file):
             writer.writerow(row)
 
 # Example usage
-fixed_width_to_csv(r'tab_delimited_data.txt', 'output.csv')
+fixed_width_to_csv(r'./app/tab_delimited_data.txt', './app/output.csv')
